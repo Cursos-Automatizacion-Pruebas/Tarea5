@@ -50,8 +50,8 @@ public class RemoveElementsTests {
         var deleteBotonLista =  driver.findElements(deleteBotonLocator);
 
         log.info("Haciendo click en cada boton delete");
-        for (int i=0; i<deleteBotonLista.size();i++) {
-            deleteBotonLista.get(i).click();
+        for (var elemento:deleteBotonLista) {
+            elemento.click();
         }
     }
 
